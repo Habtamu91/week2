@@ -1,0 +1,15 @@
+CREATE TABLE reviews (
+    review_id NUMBER PRIMARY KEY,
+    review_text CLOB,
+    sentiment VARCHAR2(20),
+    dominant_topic VARCHAR2(50),
+    review_date DATE
+);
+
+CREATE TABLE themes (
+    theme_id NUMBER PRIMARY KEY,
+    theme_name VARCHAR2(100),
+    description VARCHAR2(255)
+);
+
+-- Additional tables as needed
